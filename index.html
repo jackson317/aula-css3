@@ -2,20 +2,31 @@
 
 <html lang="pt-br"> <!--linguagem-->
    <head>
-       <meta charset="utf-8"><!--tipo de dados para aceitar acentos->
+       <meta charset="utf-8"><!--tipo de dados para aceitar acentos-->
        <title>Minha Página</title><!--título do site-->
+       <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body> <!--conteudo da página-->
     
     <nav><!-- menu-->
         <p>minha página</p>
-        <ul>
-            <li><a href="#serviços">serviços</a></li><!--topicos do menu-->
-            <li><a href="#clientes">clientes</a></li>
-            <li><a href="#parceiros">parceiros</a></li>
-            <li><a href="#time">time</a></li>
-            <li><a href="#contato">contato</a></li>
+        <ul><!--sequência sem ordem definida, senão seria ol-->
+            <li>
+                <a href="#serviços">serviços</a>
+            </li><!--topicos do menu-->
+            <li>
+                <a href="#clientes">clientes</a>
+            </li><!--"a" é hiperlink-->
+            <li>
+                <a href="#parceiros">parceiros</a>
+            </li>
+            <li>
+                <a href="#time">time</a>
+            </li>
+            <li>
+                <a href="#contato">contato</a>
+            </li>
             
         </ul>
 
@@ -23,15 +34,15 @@
        <p>minha primeira página</p><!--p de parágrafo-->
 
        <header><!--cabeçalho-->
-        <h1>Minha Página</h1><!--h1 singifica tamanho da fonte vai até h3-->
+        <h1>Minha Página</h1><!--h1 significa tamanho da fonte vai até h3-->
         <p> A melhor solução para você</p>
     </header>
 
     <section id="serviços">
      <h2>Serviços</h2>
      <p>Oferecemos os melhores serviços</p>
-     <div>
-        <img src="img/serviços.jpeg" width="300px">
+     <div><!--divisão-->
+        <img src="img/serviços.jpeg" width="300px"><!--imagens, widht é tamanho-->
      </div>
      <div>
         <img src="img/serviços.jpeg" width="300px">
@@ -51,7 +62,9 @@
         <h2>parceiros</h2>
         <p>nossos parceiros são muito legais</p>
         <div>
-            <img src="img/parceiros.jpeg" width="300 px">
+        <a href="https://google.com/" target="blank">
+          <img src="img/parceiros.jpeg" width="300 px">
+        </a>
         </div>
 
     </section>
@@ -69,6 +82,11 @@
             <p>entre em contato conosco e saiba mais</p>
             <div>
                 <img src="img/contato.jpeg" width="300px">
+                <p><a href="mailto:contato@empresa.com">contato@empresa</a></p><!--mailto para emails-->
+            </div>
+            <div>
+                <img src="img/time1.jpeg">
+                <p><a href="tel:9999999999">(99)9999-9999</a></p>
             </div>
     </section>
 
